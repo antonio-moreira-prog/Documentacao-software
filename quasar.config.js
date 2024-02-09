@@ -59,15 +59,22 @@ module.exports = configure(function (/* ctx */) {
         browser: [ 'es2019', 'edge88', 'firefox78', 'chrome87', 'safari13.1' ],
         node: 'node20'
       },
+      build: {
+        distDir: 'public', // Exemplo 1: Usando "_site" como diretório de publicação
+        // distDir: 'dist', // Exemplo 2: Usando "dist" como diretório de publicação
+        // distDir: 'public', // Exemplo 3: Usando "public" como diretório de publicação
 
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
+        // Outras configurações de build...
+      },
+
+      vueRouterMode: 'history', // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      // publicPath: '/',
+      publicPath: '/',
       // analyze: true,
       // env: {},
       // rawDefine: {}
@@ -94,10 +101,7 @@ module.exports = configure(function (/* ctx */) {
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
     framework: {
       config: {
-        dark: true,
-        loading: { color: '#fff' },
-        right: true,
-        left: false,
+        dark: false,
 
       },
 

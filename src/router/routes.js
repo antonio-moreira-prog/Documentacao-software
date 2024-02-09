@@ -1,10 +1,10 @@
-
 const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/DocumentationPage.vue') }
+      { path: '', component: () => import('pages/DocumentationPage.vue') },
+      { path: 'edit', component: () => import('pages/EditorPage.vue') } // Nova rota para o editor
     ]
   },
 
