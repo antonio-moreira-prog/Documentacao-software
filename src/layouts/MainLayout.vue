@@ -21,7 +21,6 @@
           aria-label="Toggle Dark Mode"
           @click="toggleDarkMode"
         />
-
         <div>
 
 
@@ -57,17 +56,17 @@ const linksList = [
     title: "Início",
     caption: "Voltar para o início",
     icon: "home",
-    link: "/",
+    link: "/documentation",
     onClick: (event) => {
       event.preventDefault(); // Impede o comportamento padrão
-      window.location.href = "/"; // Navegação manual
+      window.location.href = "/documentation"; // Navegação manual
     }
   },
   {
     title: "Editor",
     caption: "Ir para o editor",
     icon: "edit",
-    link: "/editor",
+    link: "/documentation",
     disabled: true,
     // onClick: (event) => {
     //   event.preventDefault(); // Impede o comportamento padrão
@@ -75,7 +74,7 @@ const linksList = [
     // }
     onClick: (event) => {
       // event.preventDefault();
-      window.location.href = "/"; // Navegação manual
+      window.location.href = "/documentation"; // Navegação manual
     }
   },
   {
